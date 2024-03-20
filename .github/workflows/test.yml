@@ -144,7 +144,6 @@ jobs:
           cmake --build build
 
       - name: ${{ matrix.test }}
-        timeout-minutes: 20
         uses: koenhagen/measure-energy-action@v0.33
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
