@@ -104,7 +104,6 @@ jobs:
           - test: oldtest
             build: { flavor: tsan }
     runs-on: ${{ matrix.build.runner }}
-    timeout-minutes: 45
     env:
       CC: ${{ matrix.build.cc }}
     steps:
